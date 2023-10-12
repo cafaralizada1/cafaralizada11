@@ -1,0 +1,103 @@
+
+.container{
+    width: 90%;
+    margin: 30px;
+
+    .main-word{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .main-word2{
+        width: 45%;
+        }
+        h2{
+            color: #FF5600;
+        }
+        h1{
+            font-size: 20px;
+        }
+        .main-word3{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+        }
+    }
+}
+.main-image{
+    width: 45%;
+    img{
+        width: 100%;
+        object-fit: cover;
+    }
+}
+// cook section
+
+
+
+
+.main-image2{
+    width: 45%;
+    img{
+        width: 100%;
+        object-fit: cover;  
+    }
+}
+.about{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .about-main-word{
+        width: 45%;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
+        .about-main-word1{
+            font-weight: 700;
+            h1{
+                font-size: 30px;
+            }
+            p{
+                font-size: 18px;
+                color: #212025;
+            }
+            h2{
+                color: #FF5600;
+            }
+        }
+        .about-main-word2{
+            color: #212025;
+        }
+    
+    }
+}
+// about section
+
+@media  (max-width:575px){
+
+    .main-word{
+        flex-direction: column;
+        .main-word2,.main-image{
+            width: 100%;
+        }
+    }
+    .about{
+        flex-direction: column;
+        .about-main-word,.main-image2{
+            width: 100%;
+        }
+    }
+}
+@media (min-width: 576px) and (max-width:767px){
+    .main-word{
+        flex-direction: column;
+        .main-word2,.main-image{
+            width: 100%;
+        }
+    }
+    .about{
+        flex-direction: column;
+        .about-main-word,.main-image2{
+            width: 100%;
+        }
+    }
+}
